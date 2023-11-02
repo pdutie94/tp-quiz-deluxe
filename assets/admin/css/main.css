@@ -1,0 +1,45 @@
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.toplevel_page_tpquizdeluxe #wpcontent {
+    padding-left: 0;
+}
+.tpquizdeluxe-page {
+    min-height: 500px;
+}
+.tpquizdeluxe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tpquizdeluxe-header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 32px;
+}
+.tpquizdeluxe-header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+}
+.tpquizdeluxe-header .version {
+    background-color: #e6e6e6;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
