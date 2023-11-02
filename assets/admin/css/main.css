@@ -15,6 +15,43 @@
 .align-center {
     align-items: center;
 }
+.gap-1 {
+    gap: 10px;
+}
+.tpquizdeluxe-button {
+    line-height: 2.45rem;
+    margin: 5px 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: #495057;
+    border: 1px solid hsl(214,20%,80%);
+    background: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tpquizdeluxe-button .dashicons:before {
+    color: #457d54;
+}
+.tpquizdeluxe-button.cancel-button .dashicons:before {
+    color: #c52827;
+}
+.tpquizdeluxe-button:hover {
+    background-color: #457d54;
+    border-color: #457d54;
+    color: #fff;
+}
+.tpquizdeluxe-button:hover .dashicons:before {
+    color: #fff;
+}
+.tpquizdeluxe-button.cancel-button:hover {
+    background-color: #c52827;
+    border-color: #c52827;
+    color: #fff;
+}
+
 .toplevel_page_tpquizdeluxe #wpcontent {
     padding-left: 0;
 }
@@ -42,4 +79,50 @@
     background-color: #e6e6e6;
     padding: 5px 10px;
     border-radius: 4px;
+}
+
+.page-header {
+    margin-top: 2rem;
+}
+.page-header h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 0 4px;
+    line-height: 1.3;
+}
+.edit-action-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.tpquizdeluxe-tablist {
+    border: none;
+    background-color: #fff;
+    padding: 0;
+}
+.tpquizdeluxe-tablist .nav-tab {
+    padding: 0.6rem 1rem;
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    box-shadow: none;
+}
+.tpquizdeluxe-tablist .nav-tab.nav-tab-active {
+    background-color: #f4f7fa;
+}
+.tpquizdeluxe-tablist .nav-tab.nav-tab-active:after {
+    content: '';
+    background-color: #2a69b8;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    right: 0;
+}
+.main-card {
+    background-color: #fff;
 }

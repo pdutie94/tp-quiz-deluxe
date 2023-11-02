@@ -80,9 +80,10 @@ if ( !class_exists('TPQuizDeluxe_Admin' ) ) {
             global $table;
         
             $screen = get_current_screen();
+            $action = isset($_GET['action']) ? $_GET['action'] : '';
         
             // get out of here if we are not on our settings page
-            if(!is_object($screen) || $screen->id != $quizz_page)
+            if(!is_object($screen) || $screen->id != $quizz_page || $action !== '')
                 return;
         
             $args = array(
@@ -103,9 +104,9 @@ if ( !class_exists('TPQuizDeluxe_Admin' ) ) {
         public function quizzes_page() {
             $actions = isset($_GET['action']) ? $_GET['action'] : '';
             if ( $actions === 'edit' ) {
-                require_once __DIR__ . '/views/quizz/edit.php';
+                require_once __DIR__ . '/views/quiz/edit.php';
             } else {
-                require_once __DIR__ . '/views/quizz/list.php';
+                require_once __DIR__ . '/views/quiz/list.php';
             }
         }
     }
