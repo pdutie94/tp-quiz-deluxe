@@ -15,6 +15,7 @@ if ( !class_exists('TPQuizDeluxe_Admin' ) ) {
         public function admin_scripts() {
             wp_enqueue_style( 'tpquizdeluxe-admin-main', TPQUIZDELUXE_URI . 'assets/admin/css/main.css', array(), TPQUIZDELUX_VERSION );
             wp_register_script( 'tpquizdeluxe-admin-main', TPQUIZDELUXE_URI . 'assets/admin/js/main.js', array('jquery'), TPQUIZDELUX_VERSION );
+            wp_register_script( 'tpquizdeluxe-admin-edit', TPQUIZDELUXE_URI . 'assets/admin/js/edit.js', array('jquery'), TPQUIZDELUX_VERSION );
         }
 
         public function add_admin_menu() {

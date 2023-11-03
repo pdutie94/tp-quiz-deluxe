@@ -99,6 +99,7 @@
 
 .tpquizdeluxe-tablist {
     border: none;
+    border-bottom: 1px solid #dbe4f0;
     background-color: #fff;
     padding: 0;
 }
@@ -125,4 +126,39 @@
 }
 .main-card {
     background-color: #fff;
+}
+.tpquizdeluxe-tab-content {
+    padding: 30px 2vw;
+}
+.tpquizdeluxe-tab-content:not(.active) {
+    display: none;
+}
+.tpquizdeluxe-control-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 1rem;
+    position: relative;
+}
+.tpquizdeluxe-control-group .controls {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 100%;
+    min-width: 210px;
+    position: relative;
+}
+.tpquizdeluxe-control-group .control-label {
+    width: 250px;
+    padding: 0.3rem 1rem 0.3rem 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.tpquizdeluxe-control-group .form-control {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #b8c9e0;
+    border-radius: 0.25em;
+    width: 100%;
 }
